@@ -1,0 +1,42 @@
+{
+    "name": "arjundhi/magento2-admin-product-grid-category-filter",
+    "description": "Magento 2 module that adds a category filter and category column to admin product listings.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "keywords": [
+        "magento2",
+        "admin-grid",
+        "catalog",
+        "product",
+        "category-filter",
+        "rameera"
+    ],
+    "support": {
+        "issues": "https://github.com/arjundhi/magento2-admin-product-grid-category-filter/issues",
+        "source": "https://github.com/arjundhi/magento2-admin-product-grid-category-filter"
+    },
+    "require": {
+        "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
+        "magento/framework": "^103.0",
+        "magento/module-catalog": "^104.0",
+        "magento/module-ui": "^101.2"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Rameera\\AdminProductGridCategoryFilter\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Rameera/AdminProductGridCategoryFilter"
+            ]
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

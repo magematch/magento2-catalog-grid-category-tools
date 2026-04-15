@@ -1,0 +1,21 @@
+# Dependency directories
+vendor/
+generated/
+
+# Composer lock (not needed for libraries/modules)
+composer.lock
+
+# IDE and OS files
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# PHPUnit / coverage
+.phpunit.result.cache
+coverage/
+
+# Backup/swap files
+*.bkp
+*.orig
+*.swp
