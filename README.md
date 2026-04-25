@@ -6,9 +6,9 @@
 > Part of the [MageMatch](https://magematch.com) 
 > developer ecosystem
 
-# Rameera Admin Product Grid Category Filter
+# MageMatch Admin Product Grid Category Filter
 
-`Rameera_AdminProductGridCategoryFilter` adds a category column and category filter dropdown to Magento admin product listing grids.
+`MageMatch_AdminProductGridCategoryFilter` adds a category column and category filter dropdown to Magento admin product listing grids.
 
 ## Features
 
@@ -26,19 +26,19 @@
 
 > Important: use **one installation mode only**.
 >
-> - If installed via Composer, do **not** keep a copy in `app/code/Rameera/AdminProductGridCategoryFilter`.
+> - If installed via Composer, do **not** keep a copy in `app/code/MageMatch/AdminProductGridCategoryFilter`.
 > - If using `app/code`, do **not** install `arjundhi/magento2-catalog-grid-category-tools` via Composer.
 
 ### Install from app/code
 
 Place the module under:
 
-`app/code/Rameera/AdminProductGridCategoryFilter`
+`app/code/MageMatch/AdminProductGridCategoryFilter`
 
 Then run:
 
 ```bash
-php bin/magento module:enable Rameera_AdminProductGridCategoryFilter
+php bin/magento module:enable MageMatch_AdminProductGridCategoryFilter
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
@@ -47,7 +47,7 @@ php bin/magento cache:flush
 
 ```bash
 composer require arjundhi/magento2-catalog-grid-category-tools
-php bin/magento module:enable Rameera_AdminProductGridCategoryFilter
+php bin/magento module:enable MageMatch_AdminProductGridCategoryFilter
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
@@ -97,17 +97,17 @@ composer require arjundhi/magento2-catalog-grid-category-tools:"dev-main@dev"
 
 If you see:
 
-`Module 'Rameera_AdminProductGridCategoryFilter' ... has been already defined in 'vendor/...'.`
+`Module 'MageMatch_AdminProductGridCategoryFilter' ... has been already defined in 'vendor/...'.`
 
 it means Magento found the same module in both locations:
 
-- `app/code/Rameera/AdminProductGridCategoryFilter`
+- `app/code/MageMatch/AdminProductGridCategoryFilter`
 - `vendor/arjundhi/magento2-catalog-grid-category-tools`
 
 Fix (Composer-based install):
 
 ```bash
-rm -rf app/code/Rameera/AdminProductGridCategoryFilter
+rm -rf app/code/MageMatch/AdminProductGridCategoryFilter
 composer install
 php bin/magento setup:upgrade
 php bin/magento cache:flush
