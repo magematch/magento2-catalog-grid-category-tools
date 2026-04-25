@@ -6,8 +6,6 @@
 > Part of the [MageMatch](https://magematch.com) 
 > developer ecosystem
 
-# MageMatch Admin Product Grid Category Filter
-
 `MageMatch_AdminProductGridCategoryFilter` adds a category column and category filter dropdown to Magento admin product listing grids.
 
 ## Features
@@ -16,41 +14,6 @@
 - Adds a `Categories` filter for Product, Related, Cross-sell, and Up-sell listing grids.
 - Uses category option source model for quick filter selection.
 - Works with modern Magento 2.4 installations.
-
-## Compatibility
-
-- Magento Open Source / Adobe Commerce `2.4.4` and later in the `2.4.x` line.
-- PHP `8.1`, `8.2`, `8.3`, and `8.4`.
-
-## Installation
-
-> Important: use **one installation mode only**.
->
-> - If installed via Composer, do **not** keep a copy in `app/code/MageMatch/AdminProductGridCategoryFilter`.
-> - If using `app/code`, do **not** install `magematch/magento2-catalog-grid-category-tools` via Composer.
-
-### Install from app/code
-
-Place the module under:
-
-`app/code/MageMatch/AdminProductGridCategoryFilter`
-
-Then run:
-
-```bash
-php bin/magento module:enable MageMatch_AdminProductGridCategoryFilter
-php bin/magento setup:upgrade
-php bin/magento cache:flush
-```
-
-### Install with Composer
-
-```bash
-composer require magematch/magento2-catalog-grid-category-tools
-php bin/magento module:enable MageMatch_AdminProductGridCategoryFilter
-php bin/magento setup:upgrade
-php bin/magento cache:flush
-```
 
 ## How to use
 
@@ -112,10 +75,6 @@ composer install
 php bin/magento setup:upgrade
 php bin/magento cache:flush
 ```
-
-## License
-
-This project is licensed under the MIT License. See `LICENSE` for details.
 
 ---
 ## Installation
